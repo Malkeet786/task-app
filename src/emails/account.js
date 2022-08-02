@@ -1,6 +1,7 @@
 const mailgun = require("mailgun-js");
 const DOMAIN = 'sandbox96d158a4875049bfa96eca6274f2f6ef.mailgun.org';
-const mg = mailgun({apiKey: '725dd806fb2faaaf8fe988690c06044d-1b3a03f6-d6208cde', domain: DOMAIN});
+// const api_key='725dd806fb2faaaf8fe988690c06044d-1b3a03f6-d6208cde'
+const mg = mailgun({apiKey: process.env.SANDBOX_API_KEY, domain: DOMAIN});
 // const data = {
 // 	from: '0786malkeetsingh@gmail.com',
 // 	to: '0786malkeetsingh@gmail.com',
